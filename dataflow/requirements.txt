@@ -1,0 +1,4 @@
+apache-beam[gcp]==2.55.0
+cryptography==42.0.5
+pymongo[srv]==4.6.1
+dnspython==2.6.1
