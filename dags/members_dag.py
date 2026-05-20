@@ -77,7 +77,7 @@ STG_TABLE       = "stg_members"            # Staging table name: staging.stg_mem
 # COMPOSER_BUCKET: read from Airflow Variables (set this in Airflow UI after Composer is ready)
 # Why a Variable? The bucket name has a random suffix we don't know until Composer is created.
 # Example value: us-central1-claims-composer-a1b2c3d4-bucket
-COMPOSER_BUCKET = Variable.get("composer_bucket")
+COMPOSER_BUCKET = Variable.get("composer_bucket", default_var="us-east1-claims-composer-a322975f-bucket")
 
 # MongoDB connection settings
 MONGO_URI        = "mongodb+srv://Test_db_user:mSyFkyvh_WmMM2_@cluster0.75jzntx.mongodb.net/"
